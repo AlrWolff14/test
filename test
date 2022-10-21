@@ -1,0 +1,11 @@
+<button onclick="playSound()">Play Sound</button>
+
+<script>
+var sounds = ["sound1.mp3", "sound2.mp3", "sound3.mp3"];
+
+function playSound() {
+  var sound = sounds[Math.floor(Math.random() * sounds.length)];
+  var audio = new Audio(sound);
+  audio.play();
+}
+</script>
